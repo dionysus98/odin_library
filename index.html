@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin exercise</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <main class="main">
+        <header class="header">
+            <div class="burger__menu"></div>
+            <div class="title">
+                <h1 class="title__text">Personal Library</h1>
+            </div>
+        </header>
+
+
+
+        <div class="container">
+            <div class="book__content">
+                <div class="counter">
+                    <div class="col books__read" id="books__read">Books Read : <span id="read__count">0</span></div>
+                    <div class="col books_pending" id="books_pending">Books Pending : <span id="pendind__count">0</span>
+                    </div>
+                    <div class="col total" id="total">Total Books : <span id="total__count">0</span></div>
+                </div>
+            </div>
+            <div class="layout__two">
+                <div class="book__input">
+                    <h2 class="book__title">Add Book</h2>
+                    <div class="form" id="form">
+                        <label for="title">Title</label>
+                        <input required type="text" name="author" id="title" class="input__title"
+                            placeholder="The Brothers Karamazov">
+                        <label for="book__id">Book ID</label>
+                        <input required type="text" name="book__id" class="input__title" id="book__id"
+                            placeholder="give a unique ID for each book">
+                        <label for="author">Author</label>
+                        <input required type="text" name="auhtor" id="author" class="input__title"
+                            placeholder="Fyodor Dostoevsky">
+                        <label for="pages">Pages</label>
+                        <input required type="number" name="pages" min="1" id="pages" class="input__title"
+                            placeholder="788">
+                        <p>status</p>
+                        <br>
+                        <label for="completed">Completed</label>
+                        <input type="radio" name="status" id="completed" checked>
+                        <label for="not__yet">Not yet</label>
+                        <input type="radio" name="status" id="not__yet">
+                        <button type="submit" id="submit" class="btn submit__btn input__title">submit</button>
+                    </div>
+                </div>
+
+                <div class="book__search">
+                    <h2 class="book__title">Book Search</h2>
+                    <div class="search__data">
+                        <label for="search__id">Book ID</label>
+                        <input type="text" id="search__id" class="search__title" placeholder="54a3">
+                        <button type="button" id="search" class="btn search__btn search__title">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

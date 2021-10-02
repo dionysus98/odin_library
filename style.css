@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+    /* border: 1px solid blue; */
+}
+body{
+    background-color: rgba(255, 102, 0, 0.5);
+    font-family: monospace;
+    color: black;
+}
+header{
+    padding: 0.8em 0;
+    margin: 0 auto;
+    margin-top: -1em;
+    background-color: rgba(245, 245, 245, 0.80);
+    text-align: center;
+}
+.layout__two{
+    font-size: 1rem;
+    background-color: rgba(245, 245, 245, 0.455);
+    width: 25%;
+    max-height: 100%;
+    position: absolute;
+    right: 0;
+    padding: 1.5em 3em;
+    margin-right: 0.5em;
+    opacity: 0.75;
+}
+.layout__two:hover{
+    opacity: 1;
+}
+label,p{
+    padding: 0.2em 1.5em 0.2em 0;
+}
+
+p{
+    display: inline-block;
+}
+
+label:hover,p:hover{
+    background-color:white;
+    box-shadow: -3px 3px 0.1px black;
+}
+
+.input__title, .search__title{
+    display: block;
+    width: 100%;
+    padding: 0.8em 0;
+    margin: 1em 0;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+.book__title{
+    text-align: center;
+    text-shadow: -2px 2px white;
+    background-color: rgba(255, 127, 80, 0.329);
+    border-radius: 7px;
+}
+.book__title:hover{
+    background-color: rgba(255, 127, 80, 0.50);
+    color: yellow;
+    text-shadow: -2px 2px black;
+}
+
+.input__title:hover, .search__title:hover{
+    background-color: black;
+    color: white;
+}
+
+.book__search{
+    margin-top: 2em;
+}
+
+.counter{
+    background-color: rgba(245, 245, 245, 0.6);
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5em 0;
+}
+
+.btn{
+    font-size: 0.85rem;
+    background-color: rgba(255, 127, 80, 0.5);
+}
+.btn:hover{
+    background-color: black;
+    color: whitesmoke;
+    font-family: italic;
+}
+.btn:active{
+  transform: scale(0.95);
+}
