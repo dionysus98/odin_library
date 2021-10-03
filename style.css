@@ -15,17 +15,44 @@ header{
     text-align: center;
 }
 .layout__two{
+    display: flex;
+}
+
+.book__display{
+    width:75%;
+}
+
+.display__header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(240, 248, 255, 0.253);
+    
+}
+.header__name{
+    width: 100%;
+    text-align: center;
+    padding: 0.7em 0;
+    /* padding: 0.5em 4.5em; */
+    font-size: 1.15rem;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+.id__header,.pages__header,.status__header{
+    width:30%;
+}
+.remove__header{
+    width: 10%;
+}
+.book__function{
+    width: 25%;
     font-size: 1rem;
     background-color: rgba(245, 245, 245, 0.455);
-    width: 25%;
-    max-height: 100%;
-    position: absolute;
-    right: 0;
+    min-height: 100%;
     padding: 1.5em 3em;
-    margin-right: 0.5em;
     opacity: 0.75;
 }
-.layout__two:hover{
+.book__function:hover{
     opacity: 1;
 }
 label,p{
@@ -92,4 +119,31 @@ label:hover,p:hover{
 }
 .btn:active{
   transform: scale(0.95);
+}
+
+
+
+.book1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(240, 248, 255, 0.5);   
+}
+
+.book__info{
+    width: 100%;
+    text-align: center;
+    padding: 1.5em 0;
+    font-size: 1.15rem;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.id__book,.pages__book,.status__book{
+    width:30%;
+}
+
+.remove__book{
+    width: 10%;
 }

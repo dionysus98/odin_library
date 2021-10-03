@@ -29,39 +29,72 @@
                     </div>
                     <div class="col total" id="total">Total Books : <span id="total__count">0</span></div>
                 </div>
+
+
             </div>
             <div class="layout__two">
-                <div class="book__input">
-                    <h2 class="book__title">Add Book</h2>
-                    <div class="form" id="form">
-                        <label for="title">Title</label>
-                        <input required type="text" name="author" id="title" class="input__title"
-                            placeholder="The Brothers Karamazov">
-                        <label for="book__id">Book ID</label>
-                        <input required type="text" name="book__id" class="input__title" id="book__id"
-                            placeholder="give a unique ID for each book">
-                        <label for="author">Author</label>
-                        <input required type="text" name="auhtor" id="author" class="input__title"
-                            placeholder="Fyodor Dostoevsky">
-                        <label for="pages">Pages</label>
-                        <input required type="number" name="pages" min="1" id="pages" class="input__title"
-                            placeholder="788">
-                        <p>status</p>
-                        <br>
-                        <label for="completed">Completed</label>
-                        <input type="radio" name="status" id="completed" checked>
-                        <label for="not__yet">Not yet</label>
-                        <input type="radio" name="status" id="not__yet">
-                        <button type="submit" id="submit" class="btn submit__btn input__title">submit</button>
-                    </div>
-                </div>
+                <div class="book__display">
 
-                <div class="book__search">
-                    <h2 class="book__title">Book Search</h2>
-                    <div class="search__data">
-                        <label for="search__id">Book ID</label>
-                        <input type="text" id="search__id" class="search__title" placeholder="54a3">
-                        <button type="button" id="search" class="btn search__btn search__title">Search</button>
+                    <div class="display__header" id="display_header">
+                        <div class="header__name id__header">ID</div>
+                        <div class="header__name title__header">Title</div>
+                        <div class="header__name author__header">Author</div>
+                        <div class="header__name pages__header">Pages</div>
+                        <div class="header__name status__header">Status</div>
+                        <div class="header__name remove__header">X</div>
+
+                    </div>
+
+                    <div class="book1" id="book1">
+                        <div class="book__info id__book" id="">3350</div>
+                        <div class="book__info title__book" id="">Crime and Punishment</div>
+                        <div class="book__info author__book" id="">Fyodor Dostoevskty</div>
+                        <div class="book__info pages__book" id="">998</div>
+                        <div class="book__info status__book" id="">Completed</div>
+                        <div class="book__info remove__book" id="">X</div>
+                    </div>
+                    <div class="book1" id="book2">
+                        <div class="book__info id__book" id="">3350</div>
+                        <div class="book__info title__book" id="">Crime and Punishment</div>
+                        <div class="book__info author__book" id="">Fyodor Dostoevskty</div>
+                        <div class="book__info pages__book" id="">998</div>
+                        <div class="book__info status__book" id="">Completed</div>
+                        <div class="book__info remove__book" id="">X</div>
+                    </div>
+
+                </div>
+                <div class="book__function">
+                    <div class="book__input">
+                        <h2 class="book__title">Add Book</h2>
+                        <div class="form" id="form">
+                            <label for="title">Title</label>
+                            <input required type="text" name="author" id="title" class="input__title"
+                                placeholder="The Brothers Karamazov">
+                            <label for="book__id">Book ID</label>
+                            <input required type="text" name="book__id" class="input__title" id="book__id"
+                                placeholder="give a unique ID for each book">
+                            <label for="author">Author</label>
+                            <input required type="text" name="auhtor" id="author" class="input__title"
+                                placeholder="Fyodor Dostoevsky">
+                            <label for="pages">Pages</label>
+                            <input required type="number" name="pages" min="1" id="pages" class="input__title"
+                                placeholder="788">
+                            <p>status</p>
+                            <br>
+                            <label for="completed">Completed</label>
+                            <input type="radio" name="status" id="completed" checked>
+                            <label for="not__yet">Not yet</label>
+                            <input type="radio" name="status" id="not__yet">
+                            <button type="submit" id="submit" class="btn submit__btn input__title">submit</button>
+                        </div>
+                    </div>
+                    <div class="book__search">
+                        <h2 class="book__title">Book Search</h2>
+                        <div class="search__data">
+                            <label for="search__id">Book ID</label>
+                            <input type="text" id="search__id" class="search__title" placeholder="54a3">
+                            <button type="button" id="search" class="btn search__btn search__title">Search</button>
+                        </div>
                     </div>
                 </div>
             </div>
